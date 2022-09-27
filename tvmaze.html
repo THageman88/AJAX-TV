@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>TV Maze</title>
+  <meta charset="utf-8">
+  <meta
+      name="viewport"
+      content="
+      width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+
+<main class="container">
+  <h1>TV Maze</h1>
+
+  <form id="searchForm">
+    <div class="form-group row">
+      <input
+          id="searchForm-term" type="search" required value="Turtles" label="Search">
+      <div class="input-group-append">
+        <button type="submit">Search</button>
+    </div>
+    </div>
+  </form>
+
+  <section id="showsList" class="row">
+  </section>
+
+  <section id="episodesArea" style="display: none">
+    <h3>Episodes</h3>
+    <ul id="episodesList"></ul>
+  </section>
+</main>
+
+<script src="http://unpkg.com/jquery"></script>
+<script src="http://unpkg.com/axios/dist/axios.js"></script>
+<script src="tvmaze.js"></script>
+
+</body>
+</html>
